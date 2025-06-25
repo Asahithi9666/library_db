@@ -22,12 +22,17 @@ select * from Members;
 update Members
 set Name='srikanya'
 where MemberID=1;
+delete from Members
+where MemberID=2;
 
 
 insert into Books values(105,'The Guide','Fiction',1),
 (194,'Wings of Fire','Motivation',3),
 (266,'The life Divine','Philosophy',1);
 select * from Books;
+update Books
+set Genre='Fictional'
+where BookID=105;
 
 
 insert into Loans values(1,266,2,'2024-5-16','2024-8-22'),
